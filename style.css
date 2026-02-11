@@ -1,0 +1,244 @@
+/* ===============================
+   RESET & GLOBAL STYLES
+=================================*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* ===============================
+   HEADER & NAVBAR
+=================================*/
+/* ===============================
+   HEADER & NAVBAR
+=================================*/
+header {
+    background: rgba(17, 17, 17, 0.85);
+    backdrop-filter: blur(10px);
+    color: #fff;
+    padding: 20px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+/* NAV CONTAINER */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* NAV LINKS */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Underline hover effect */
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    bottom: -4px;
+    background: #00bcd4;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a:hover {
+    color: #00bcd4;
+}
+
+/* SEARCH FORM */
+.search-form {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 30px;
+    padding: 5px 12px;
+    transition: all 0.3s ease;
+}
+
+.search-form input {
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 0.9rem;
+    width: 180px;
+    background: transparent;
+}
+
+.search-form button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* Search hover glow */
+.search-form:hover {
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+
+
+/* ===============================
+   HERO SECTION
+=================================*/
+main section:first-of-type {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #00bcd4, #3f51b5);
+    color: white;
+}
+
+main section:first-of-type h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* ===============================
+   PRODUCTS SECTION
+=================================*/
+main section:nth-of-type(2) {
+    padding: 50px 40px;
+}
+
+main section:nth-of-type(2) h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+}
+
+/* PRODUCT GRID */
+main section:nth-of-type(2) > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* PRODUCT CARD */
+article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+
+article:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+
+article h3 {
+    margin: 15px 0 10px;
+}
+
+article strong {
+    color: #3f51b5;
+    font-size: 1.2rem;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+/* BUTTON */
+button {
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #3f51b5, #00bcd4);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,188,212,0.4);
+}
+
+/* ===============================
+   FOOTER
+=================================*/
+footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+/* ===============================
+   RESPONSIVE
+=================================*/
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main section:first-of-type h2 {
+        font-size: 2rem;
+    }
+}
+
+body {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
