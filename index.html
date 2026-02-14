@@ -27,23 +27,32 @@
             <li><a href="#">Deals</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li><a href="#">Cart</a></li>
+            <li class="cart-item">
+            <a href="#" class="cart-link">
+                <img src="assets/icons/cart.png" 
+                    alt="Cart Icon" 
+                    class="cart-icon">
+                <span class="cart-count" id="cart-count">0</span>
+            </a>
+</li>
+
         </ul>
 
         <!-- Search Form -->
-        <form class="search-form" action="#" method="GET">
-            <input 
-                type="text" 
-                name="search" 
-                placeholder="Search products..."
-                aria-label="Search products"
-            >
-            <button type="submit">
-                <img src="assets/icons/icons8-search-30.png" 
-                     alt="Search Icon" 
-                     width="20">
-            </button>
-        </form>
+       <form class="search-form" id="search-form">
+    <input 
+        type="text" 
+        id="search-input"
+        name="search" 
+        placeholder="Search products..."
+        aria-label="Search products"
+    >
+    <button type="submit">
+        <img src="assets/icons/icons8-search-30.png" 
+             alt="Search Icon" 
+             width="20">
+    </button>
+</form>
 
     </div>
 </nav>
@@ -63,7 +72,7 @@
 
 
         <!-- PRODUCTS SECTION -->
-        <section>
+        <section id="products">
             <h2>Our Products</h2>
 
             <div>
@@ -74,7 +83,12 @@
                     <h3>Wireless Headphones</h3>
                     <p><strong>$89.99</strong></p>
                     <p>High-quality wireless headphones with noise cancellation and long battery life.</p>
-                    <button>Add to Cart</button>
+                   <button class="add-to-cart"
+                        data-name="Wireless Headphones"
+                        data-price="89.99">
+                        Add to Cart
+                    </button>
+
                 </article>
 
                 <!-- PRODUCT 2 -->
@@ -83,7 +97,11 @@
                     <h3>Smart Watch</h3>
                     <p><strong>$129.99</strong></p>
                     <p>Track your fitness, heart rate, and notifications with this sleek smart watch.</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
                 </article>
 
                 <!-- PRODUCT 3 -->
@@ -92,7 +110,12 @@
                     <h3>Bluetooth Speaker</h3>
                     <p><strong>$59.99</strong></p>
                     <p>Portable Bluetooth speaker with powerful bass and waterproof design.</p>
-                    <button>Add to Cart</button>
+                    
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
                 </article>
 
                 <!-- PRODUCT 4 -->
@@ -101,7 +124,11 @@
                     <h3>Laptop Backpack</h3>
                     <p><strong>$49.99</strong></p>
                     <p>Durable and stylish backpack designed to safely carry your laptop and accessories.</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
                 </article>
 
                 <!-- PRODUCT 5 -->
@@ -110,7 +137,11 @@
                     <h3>Gaming Mouse</h3>
                     <p><strong>$39.99</strong></p>
                     <p>Ergonomic gaming mouse with customizable DPI and RGB lighting.</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
                 </article>
 
                 <!-- PRODUCT 6 -->
@@ -119,7 +150,128 @@
                     <h3>Mechanical Keyboard</h3>
                     <p><strong>$99.99</strong></p>
                     <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
-                    <button>Add to Cart</button>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 7 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
+                </article>
+
+                <!-- PRODUCT 6 -->
+                <article>
+                    <img src="assets\images\download (5).jfif" alt="Product 6" width="200">
+                    <h3>Mechanical Keyboard</h3>
+                    <p><strong>$99.99</strong></p>
+                    <p>Mechanical keyboard with tactile switches and customizable backlighting.</p>
+                    <button class="add-to-cart"
+                        data-name="Smart Watch"
+                        data-price="129.99">
+                         Add to Cart
+                    </button>
                 </article>
 
             </div>
@@ -132,6 +284,16 @@
     <footer>
         <p>&copy; 2026 Hastings Store. All rights reserved.</p>
     </footer>
+
+    <div id="mini-cart" class="mini-cart hidden">
+    <h4>Cart Summary</h4>
+    <p>Total Items: <span id="mini-items">0</span></p>
+    <p>Total Price: $<span id="mini-total">0.00</span></p>
+</div>
+
+<script src="cart.js"></script>
+<script src="search.js"></script>
+
 
 </body>
 </html>

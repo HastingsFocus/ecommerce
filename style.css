@@ -1,6 +1,4 @@
-/* ===============================
-   RESET & GLOBAL STYLES
-=================================*/
+
 * {
     margin: 0;
     padding: 0;
@@ -23,12 +21,7 @@ img {
     display: block;
 }
 
-/* ===============================
-   HEADER & NAVBAR
-=================================*/
-/* ===============================
-   HEADER & NAVBAR
-=================================*/
+
 header {
     background: rgba(17, 17, 17, 0.85);
     backdrop-filter: blur(10px);
@@ -85,6 +78,40 @@ header h1 {
 .nav-links a:hover {
     color: #00bcd4;
 }
+
+/* Cart Styling */
+.cart-item {
+    position: relative;
+}
+
+.cart-link {
+    position: relative;
+    display: inline-block;
+}
+
+.cart-icon {
+    width: 28px;
+    height: auto;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 3px 7px;
+    border-radius: 50%;
+}
+
+.cart-link:hover .cart-icon {
+    transform: scale(1.1);
+    transition: 0.2s ease;
+}
+
+
 
 /* SEARCH FORM */
 .search-form {
@@ -202,6 +229,24 @@ button:hover {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0,188,212,0.4);
 }
+
+.mini-cart {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
 
 /* ===============================
    FOOTER
